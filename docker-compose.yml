@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   web:
-    container_name: e-commerce-website
+    container_name: e-commerce-website-template
     build:
       context: .
       dockerfile: Dockerfile
