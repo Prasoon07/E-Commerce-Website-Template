@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  web:
+    container_name: e-commerce-website
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "90:80"
+    volumes:
+      - .:/var/www/html
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
